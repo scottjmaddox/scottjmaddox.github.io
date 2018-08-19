@@ -104,8 +104,7 @@ a procedural macro), we can provide a safe
 interface to the bug-prone problem of partial initialization! But there's a catch...
 
 [Unfortunately, LLVM is not able to optimize away all of the copying associated
-with this approach to partial initialization]
-(https://play.rust-lang.org/?gist=e4b00689bc21274119a7ad9a6e6beea3&version=nightly&mode=release).
+with this approach to partial initialization](https://play.rust-lang.org/?gist=e4b00689bc21274119a7ad9a6e6beea3&version=nightly&mode=release).
 So for performance-critical code, this isn't a very good solution.
 
 Furthermore, one major reason for using partial initialization is to initialize structs
