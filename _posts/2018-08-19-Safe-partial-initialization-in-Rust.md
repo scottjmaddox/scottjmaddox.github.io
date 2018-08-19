@@ -2,8 +2,6 @@
 published: true
 layout: post
 ---
-## Safe partial initialization in Rust
-
 Say we have a struct, `Foo`, with multiple fields that we would like to partially initialize without resorting to using `unsafe`. We could write a procedural macro called `PartialInit`, for example, which would be invoked using `derive`:
 
 ```rust
