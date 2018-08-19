@@ -78,7 +78,7 @@ trait PartialInit {
 ```
 
 Note 1: Currently, due to limitations around unions in stable Rust, `Uninit` can only be defined this way in unstable Rust.
-An altenative stable-friendly definition is possible using `core::mem::ManuallyDrop` and `core::mem::uninitialized`, though.
+An alternative stable-friendly definition is possible using `core::mem::ManuallyDrop` and `core::mem::uninitialized`, though.
 
 Note 2: the amount of generated source code grows linearly with the
 number of fields, which is as good as we can expect.
@@ -108,8 +108,8 @@ with this approach to partial initialization](https://play.rust-lang.org/?gist=e
 So for performance-critical code, this isn't a very good solution.
 
 Furthermore, one major reason for using partial initialization is to initialize structs
-that are too large to fit on the stack, where idiomatic Rust intialization (`fn new() -> Self { ... }`)
-would overflow the stack. However, since this approach to partial initializaiton
+that are too large to fit on the stack, where idiomatic Rust initialization (`fn new() -> Self { ... }`)
+would overflow the stack. However, since this approach to partial initialization
 requires copying the entire struct onto the stack (multiple times), it will not
 work for very large structs.
 
