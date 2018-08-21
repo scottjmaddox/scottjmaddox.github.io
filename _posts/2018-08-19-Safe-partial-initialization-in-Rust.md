@@ -127,3 +127,7 @@ available, this approach could potentially be extended to cover partial initiali
 making it possible to implement data structures like 
 [`ArrayVec`](https://docs.rs/arrayvec/latest/arrayvec/struct.ArrayVec.html)
 with little-to-no `unsafe` code, making Rust even more appealing for security-critical applications.
+
+## Comments
+
+If you have any comments or questions, please [join the Reddit discussion!](https://www.reddit.com/r/rust/comments/98nmge/safe_partial_initialization_in_rust/)
