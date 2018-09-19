@@ -35,3 +35,7 @@ impl<T, U> TryFrom<U> for T where T: From<U>;
 Regardless of the syntax, though, the semantics would be the same: the impl would be reserved for future definition; conflicting impl's would produce compiler errors. This would make it possible to stabilize the `TryFrom` and `TryInto` traits now, with the blanket impl's for `From` and `Into` reserved for later definition. This would also make it possible for crate authors to reserve blanket impl's for traits that they define.
 
 As far as how difficult this would be to implemented in the compiler, I cannot comment, but I'm hoping someone from the compiler team can.
+
+## Comments
+
+If you have any comments or questions, please [join the Reddit discussion!](https://www.reddit.com/r/rust/comments/9h27j0/reserving_trait_impls_in_rust/)
